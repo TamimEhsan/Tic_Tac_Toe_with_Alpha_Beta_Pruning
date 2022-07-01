@@ -9,6 +9,18 @@ let board = [
     ['', '', ''],
     ['', '', '']
 ];
+let zobrist2 = [
+    [
+        [0x3776D41,0x5AAA5C7],[0x4623547,0x2A76AE2],[0x89C0C89,0x03001BF]
+    ],[
+        [0x1042279,0x2FB60CA],[0x8755C10,0xEAFE02D],[0x25EC3B0,0x13A2ED5]
+    ],[
+        [0xA672E32,0xFD56395],[0x6F3D9E5,0xFF719CC],[0x5B49AA1,0xE8FC971]
+    ]
+];
+
+let hash = 0;
+let map = new Map();
 
 let w; // = width / 3;
 let h; // = height / 3;
@@ -21,7 +33,7 @@ function setup() {
     createCanvas(400, 400);
     w = width / 3;
     h = height / 3;
-   bestMove();
+    //hash = bestMove(hash);
 
 }
 
@@ -78,8 +90,10 @@ function mousePressed() {
         // If valid turn
         if (board[i][j] == '') {
             board[i][j] = human;
+            hash = hash ^ zobrist2[i][j][1]; // hooman = 1;
+
             currentPlayer = ai;
-            bestMove();
+            hash = bestMove(hash);
         }
     }
 }

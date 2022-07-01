@@ -5,23 +5,22 @@ The board visualizer is stolen shamelessly from the coding train that can be fou
 
 ## Benchmarking
 
-AI goes first
+AI goes first|S
 
-| Move Number | Minimax | Alpha Beta | Ratio  |
-| ----------- | ------- | ---------- | ------ |
-| 1           | 549945  | 3079       | 178.61 |
-| 2           | 7331    | 1519       | 4.82   |
-| 3           | 197     | 97         | 2.03   |
-| 4           | 13      | 13         | 1      |
-| 5           | 1       | 1          | 1      |
+| Move Number | Minimax | Alpha Beta | Zobrist Hashing | Ratio      |
+| ----------- | ------- | ---------- | --------------- | ---------- |
+| 1           | 549945  | 30709      | 6197            | 88:5:1     |
+| 2           | 7331    | 1519       | 7               | 1047:217:1 |
+| 3           | 197     | 97         | 5               | 40:19:1    |
+| 4           | 13      | 13         | 3               | 4:4:1      |
+| 5           | 1       | 1          | 1               | 1:1:1      |
 
 Hooman goes first
 
-| Move Number | Minimax | Alpha Beta | Ratio |
-| ----------- | ------- | ---------- | ----- |
-| 1           | 59704   | 6138       | 9.72  |
-| 2           | 1172    | 477        | 2.45  |
-| 3           | 50      | 44         | 1.13  |
-| 4           | 4       | 4          | 1     |
-| 5           | 1       | 1          | 1     |
+| Move Number | Minimax | Alpha Beta | Zobrist Hashing | Ratio    |
+| ----------- | ------- | ---------- | --------------- | -------- |
+| 1           | 59704   | 6138       | 1874            | 32:3:1   |
+| 2           | 1172    | 477        | 6               | 195:80:1 |
+| 3           | 50      | 44         | 4               | 13:11:1  |
+| 4           | 4       | 4          | 2               | 2:2:1    |
 
