@@ -3,9 +3,13 @@
 The goal here is to create an AI to play simple games. first of which is a tic tac toe. 
 The board visualizer is stolen shamelessly from the coding train that can be found here -> [Coding Challenge #149: Tic Tac Toe](https://www.youtube.com/watch?v=GTWrWM1UsnA&t=0s)
 
+Visit https://tamimehsan.github.io/Tic_Tac_Toe_with_Alpha_Beta_Pruning/ and open console to find the console log
+
+
+
 ## Benchmarking
 
-AI goes first|S
+AI goes first
 
 | Move Number | Minimax | Alpha Beta | Zobrist Hashing | Ratio      |
 | ----------- | ------- | ---------- | --------------- | ---------- |

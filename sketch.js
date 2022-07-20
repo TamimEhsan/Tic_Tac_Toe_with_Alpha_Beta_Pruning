@@ -33,7 +33,7 @@ function setup() {
     createCanvas(400, 400);
     w = width / 3;
     h = height / 3;
-    //hash = bestMove(hash);
+    hash = bestMove(hash);
 
 }
 

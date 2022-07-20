@@ -75,7 +75,7 @@ function minimax(board, depth,alpha,beta, isMaximizing,hash) {
     }
     if( gameMap.get(hash)!==undefined ) {
         reduced++;
-       // return gameMap.get(hash);
+        return gameMap.get(hash);
     }
 
 
